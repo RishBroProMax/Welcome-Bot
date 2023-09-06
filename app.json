@@ -1,0 +1,76 @@
+{
+    "name": "Auto Welcome Bot",
+    "description": "Auto Welcome Bot",
+    "logo": "",
+    "keywords": [
+        "Telegram",
+        "Custom",
+        "Adv",
+        "Auto",
+        "Welcome", 
+        "Bot"
+    ],
+    "website": "https://youtube.com/@Rish_Bro/",
+    "repository": "https://github.com/RishBroProMax/Welcome-Bot",
+    "success_url": "https://youtube.com/@Rish_Bro/",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Your APP_ID ",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API_Hash ",
+            "value": ""
+        },
+        "APP_NAME": {
+            "description": "Enter Heroku App Name",
+            "value": "autowelcomebot",
+            "required": false
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "HOSTED": {
+            "description": "Check readme.md file for more details (true)",
+            "value": "",
+            "required": false
+        },
+        "OWNER_ID": {
+            "description": "Your Bot Token From ",
+            "value": ""
+        },
+        "WELCOME_TEXT": {
+            "description": "Set Your Welcome Text More Information Check Out Readme.md",
+            "value": "",
+            "required": false
+        },
+        "WELCOME_BUTTON": {
+            "description": "Check readme.md file for more details (true)",
+            "value": "",
+            "required": false
+        },
+        "WELCOME_BUTTON_LINK": {
+            "description": "give your [private or Public] Channel or Group Link || you must use https://t.me or t.me Dont use @",
+            "value": "",
+            "required": false
+        },
+        "WELCOME_BUTTON_NAME": {
+            "description": "Give the button a name (eg:-JOIN NOW)",
+            "value": "",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
